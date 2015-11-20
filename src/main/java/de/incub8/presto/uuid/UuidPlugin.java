@@ -7,10 +7,11 @@ import java.util.List;
 import javax.inject.Inject;
 
 import com.facebook.presto.metadata.FunctionFactory;
+import com.facebook.presto.spi.Plugin;
 import com.facebook.presto.spi.type.TypeManager;
 import com.google.common.collect.ImmutableList;
 
-public class Plugin implements com.facebook.presto.spi.Plugin
+public class UuidPlugin implements Plugin
 {
     private TypeManager typeManager;
 
