@@ -20,19 +20,36 @@
     <url>https://github.com/incub8/presto-uuid</url>
   </scm>
   <properties>
+    <presto.version>0.126</presto.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
     <dependency>
       <groupId>com.facebook.presto</groupId>
-      <artifactId>presto-spi</artifactId>
-      <version>0.125</version>
+      <artifactId>presto-main</artifactId>
+      <version>${presto.version}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.facebook.presto</groupId>
+      <artifactId>presto-spi</artifactId>
+      <version>${presto.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+	  <groupId>com.fasterxml.uuid</groupId>
+	  <artifactId>java-uuid-generator</artifactId>
+	  <version>3.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>18.0</version>
+    </dependency>
+    <dependency>
+	  <groupId>javax.inject</groupId>
+	  <artifactId>javax.inject</artifactId>
+	  <version>1</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
