@@ -6,11 +6,14 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.kohsuke.MetaInfServices;
+
 import com.facebook.presto.metadata.FunctionFactory;
 import com.facebook.presto.spi.Plugin;
 import com.facebook.presto.spi.type.TypeManager;
 import com.google.common.collect.ImmutableList;
 
+@MetaInfServices
 public class UuidPlugin implements Plugin
 {
     private TypeManager typeManager;
