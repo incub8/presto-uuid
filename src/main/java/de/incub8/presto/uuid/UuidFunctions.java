@@ -2,6 +2,7 @@ package de.incub8.presto.uuid;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.UUID;
 
 import javax.annotation.Nullable;
 
@@ -56,7 +57,10 @@ public class UuidFunctions
     {
         try
         {
-            return Generators.nameBasedGenerator(null, MessageDigest.getInstance(algorithm)).generate(name).toString();
+            return Generators
+                .nameBasedGenerator(UUID.fromString(namespace), MessageDigest.getInstance(algorithm))
+                .generate(name)
+                .toString();
         }
         catch (NoSuchAlgorithmException e)
         {
