@@ -11,8 +11,9 @@ docker run -it --rm --link pg:pg1 postgres:9.6.6 psql -Upostgres -hpg1 -dtest -c
 ```
 
 ### presto-server
-```
+
 #### etc/catalog/pg4test.properties
+```
 connector.name=postgresql
 connection-url=jdbc:postgresql://pg1:5432/test
 connection-user=postgres
