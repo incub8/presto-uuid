@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.incub8.presto</groupId>
   <artifactId>presto-uuid</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.189</version>
   <description>Presto - UUID function support</description>
   <url>https://github.com/incub8/presto-uuid</url>
   <inceptionYear>2015</inceptionYear>
@@ -20,7 +20,7 @@
     <url>https://github.com/incub8/presto-uuid</url>
   </scm>
   <properties>
-    <presto.version>0.126</presto.version>
+    <presto.version>0.189</presto.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
